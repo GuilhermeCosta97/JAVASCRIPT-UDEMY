@@ -36,3 +36,29 @@ let $teste = "ok"
 
 console.log(_teste);
 console.log($teste);
+
+// Prompt
+// const age = prompt("Digite sua idade:")
+
+// console.log(`Voçê tem ${age} anos`)
+
+// Alert
+// alert(`Testando`)
+
+// const z = 10
+
+// alert(`O numero é ${z}`)
+
+// Math
+console.log(Math.max(5, 6, 1, 10));
+
+console.log(Math.floor(5.14));
+
+console.log(Math.ceil(6.14));
+
+// Console
+console.log("Teste!");
+
+console.error("Erro!")
+
+console.warn("Aviso!")
