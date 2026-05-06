@@ -57,8 +57,75 @@ console.log(Math.floor(5.14));
 console.log(Math.ceil(6.14));
 
 // Console
-console.log("Teste!");
+// console.log("Teste!");
 
-console.error("Erro!")
+// console.error("Erro!")
 
-console.warn("Aviso!")
+// console.warn("Aviso!")
+
+// If
+const m = 5
+
+if(m < 10) {
+    console.log("M é menor que 10 !")
+}
+
+const user = "João"
+
+if(user === "João") {
+    console.log("Olá joão !")
+}
+
+// Else 
+const loggedIn = false;
+
+if(loggedIn) {
+    console.log("Usuario autenticado!")
+} else {
+    console.log("Usuario nao autenticado!")
+}
+
+const q = 5
+const w = 10
+
+if(q > 5 && w > 11) {
+    console.log("Os numeros mais altos!")
+} else {
+    console.log("Numeros nao sao mais altos")
+}
+
+// Else if
+if(1 > 2) {
+    console.log("Teste")
+} else if(2 > 3) {
+    console.log("Teste 2")
+} else if(3 > 2) {
+    console.log("Agora sim!")
+}
+
+const userName = "Guilherme"
+const age = 29
+
+if(userName === "João") {
+    console.log("Bem vindo João")
+} else if(userName === "Guilherme" && age === 29) {
+    console.log("Bem vindo Guilherme! Voçê tem 29 anos!")
+} else {
+    console.log("Nenhuma condição aceita!")
+}
+
+// While 
+let p = 0;
+
+while (p < 5) {
+    console.log(`Imprimindo ${p}`);
+    p = p + 1; 
+}
+
+// Loop infinito
+// let x = 0;
+
+//while (x < 10) {
+    //console.log(`Imprimindo ${x}`);
+//}
+
