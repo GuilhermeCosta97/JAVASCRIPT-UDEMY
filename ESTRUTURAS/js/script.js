@@ -115,12 +115,12 @@ if(userName === "João") {
 }
 
 // While 
-let p = 0;
+// let p = 0;
 
-while (p < 5) {
-    console.log(`Imprimindo ${p}`);
-    p = p + 1; 
-}
+// while (p < 5) {
+    //console.log(`Imprimindo ${p}`);
+    //p = p + 1; 
+//}
 
 // Loop infinito
 // let x = 0;
@@ -129,3 +129,51 @@ while (p < 5) {
     //console.log(`Imprimindo ${x}`);
 //}
 
+// Do while
+//let o = 10;
+
+//do {
+    //console.log(`O valor de o é: ${o}`);
+    //o--;
+//} while (0 > 1);
+
+// For
+/*for (let t = 0; t < 10; t++) {
+    console.log(`Repetindo algo...`)
+}
+
+let r = 10;
+
+for (r; r > 0; r = r - 1) {
+    console.log(`O r esta diminuindo ${r}`)
+}*/
+
+// Break
+/*for(let g = 20; g > 10; g--) {
+    console.log(`O valor de G é: ${g}`)
+
+    if (g === 12) {
+        console.log(`O valor de G é 12!`)
+        break;
+    }
+}
+
+for(let n = 0; n < 11; n++) {
+    console.log(`O valor de n é: ${n}`)
+
+    if(n === 9){
+        console.log(`O valor de N é 9!`)
+        break;
+    }
+}*/
+
+// Continue
+for(let n = 1; n < 10; n++) {
+    //Operador resto %
+    if(n % 2 === 0){
+        console.log(`Numero par!`)
+        continue
+    }
+
+    console.log(n);
+}
