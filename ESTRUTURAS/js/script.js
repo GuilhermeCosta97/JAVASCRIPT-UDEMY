@@ -177,3 +177,21 @@ for(let n = 1; n < 10; n++) {
 
     console.log(n);
 }
+
+// Switch
+
+const job = "Advogado"
+
+switch (job) {
+    case "Programador":
+        console.log(`Voçê é um programador`)
+        break
+    case "Mecânico":
+        console.log(`Voçê é um mecânico`)
+        break
+    case "Advogado":
+        console.log(`Voçê é um advogado`)
+        break
+    default:
+        console.log(`Profissao nao encontrada`)
+}
