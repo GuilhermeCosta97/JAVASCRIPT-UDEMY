@@ -75,3 +75,66 @@ function escopoAninhado() {
 escopoAninhado()
 
 console.log(m)
+
+// Arrow function
+const testArrow = () => {
+    console.log("Teste de arrow function")
+}
+
+testArrow()
+
+const parImpar = (n) => {
+    if (n % 2 === 0) {
+        console.log("Par")
+        return
+    }
+
+    console.log("Impar")
+}
+
+parImpar(5)
+
+parImpar(10)
+
+// Mais sobre arrow functions
+const raizQuadrada = (x) => {
+    return x * x
+}
+
+console.log(raizQuadrada(4))
+
+const raizQuadrada2 = (x) => x * x 
+
+console.log(raizQuadrada2(10))
+console.log(raizQuadrada2(26))
+
+
+const helloWorld = () => console.log("Hello world")
+
+helloWorld()
+
+// Parametros opcionais
+const multiplication = function (m, n) {
+    if (n === undefined) {
+        return m * 2
+    } else {
+        return m * n
+    }
+}
+
+console.log(multiplication(5))
+
+console.log(multiplication(8, 9))
+
+const greeting = function (name) {
+    if (!name) {
+        console.log("Olá")
+        return 
+    }
+
+    console.log(`Olá, ${name}`)
+}
+
+greeting()
+
+greeting("Guilherme!")
