@@ -138,3 +138,24 @@ const greeting = function (name) {
 greeting()
 
 greeting("Guilherme!")
+
+// Valor default
+const customGreeting = (name, greet = "Olá") => {
+    return `${greet}, ${name}!`
+}
+
+console.log(customGreeting("Guilherme"))
+
+console.log(customGreeting("João, bom dia!"))
+
+const repeatText = (text, repeat = 2) => {
+
+    for (let i = 0; i < repeat; i++) {
+        console.log(text)
+    }
+
+}
+
+repeatText("Testando")
+
+repeatText("Testando 5 vezes", 5)
