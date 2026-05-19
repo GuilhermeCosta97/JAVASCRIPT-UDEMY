@@ -159,3 +159,65 @@ const repeatText = (text, repeat = 2) => {
 repeatText("Testando")
 
 repeatText("Testando 5 vezes", 5)
+
+// Closure
+
+function someFunction() {
+    let txt = "Alguma coisa"
+
+    function display() {
+        console.log(txt)
+    }
+
+    display()
+}
+
+someFunction()
+
+// Mais sobre closure
+const multiPlication = (n) => {
+    return (m) => {
+        return n * m
+    }
+}
+
+const c1 = multiPlication(5)
+
+const c2 = multiPlication(10)
+
+console.log(c1)
+
+console.log(c2)
+
+console.log(c1(5))
+
+console.log(c2(10))
+
+// Recursion 
+const unTilten = (n, m) => {
+    if (n <= 10) {
+        console.log("Parou de executar!")
+    } else {
+        const x = n - m
+
+        console.log(x)
+
+        unTilten(x, m)
+    }
+}
+
+unTilten(100, 7)
+
+function facTorial(x) {
+    if (x === 0) {
+        return 1
+    } else {
+        return x * facTorial(x - 1)
+    }
+}
+
+const num = 6
+
+const result = facTorial(num)
+
+console.log(`O fatorial de ${num} é ${result}`)
