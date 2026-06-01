@@ -1,4 +1,4 @@
-// Arrays
+// Arrays (utilizado como lista de itens)
 
 const lista = [1, 2, 3, 4, 5]
 
@@ -30,3 +30,36 @@ console.log(number[`length`])
 const myName = "Guilherme"
 
 console.log(myName.length) 
+
+// Objetos (utilizado para descrever um item)
+const person = {
+    name: "Guilherme",
+    age: 28,
+    job: "Programador",
+}
+
+console.log(person)
+
+console.log(person.name)
+
+console.log(person.name.length)
+
+console.log(typeof person)
+
+// Criando e deletando propriedades 
+const car = {
+    engine: 2.0,
+    brand: "VW",
+    model: "Tiguan",
+    km: 20000,
+}
+
+console.log(car)
+
+car.doors = 4
+
+console.log(car)
+
+delete car.km
+
+console.log(car)
