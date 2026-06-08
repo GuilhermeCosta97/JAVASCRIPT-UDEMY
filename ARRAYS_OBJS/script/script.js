@@ -63,3 +63,29 @@ console.log(car)
 delete car.km
 
 console.log(car)
+
+// Mais sobre objetos
+
+const obj = {
+    a: "Teste",
+    b: true,
+}
+
+console.log(obj instanceof Object)
+
+const obj2 = {
+    c: [],
+}
+
+Object.assign(obj2, obj)
+
+console.log(obj2)
+
+console.log(obj)
+
+// Conhecendo mais sobre objetos
+console.log(Object.keys(obj))
+console.log(Object.keys(obj2))
+console.log(Object.keys(car))
+
+console.log(Object.entries(car))
