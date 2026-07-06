@@ -119,3 +119,35 @@ const users = ["Guilherme", "Matheus", "Jean", "Diego"]
 for (i = 0; i < users.length; i++) {
     console.log(`Listando usuario: ${users[i]}`)
 }
+
+// Shift e Unshift
+
+const letters = ["a", "b", "c"]
+
+const letter = letters.shift()
+
+console.log(letter)
+
+console.log(letters)
+
+letters.unshift = ("p", "q", "r")
+
+letters.unshift = ("z")
+
+console.log(letters)
+
+// indexOf e lastIndexof
+
+const myElements = ["Morango", "Banana", "Pêra", "Banana"]
+
+console.log(myElements.indexOf("Banana"))
+console.log(myElements.indexOf("Pêra"))
+
+console.log(myElements[2])
+console.log(myElements[myElements.indexOf("Banana")])
+
+console.log(myElements.lastIndexOf("Banana"))
+
+console.log(myElements.indexOf("Mamão"))
+
+console.log(myElements.lastIndexOf("Mamão"))
