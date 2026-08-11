@@ -67,3 +67,46 @@ console.log(mySecondObject)
 console.log(mySecondObject.a)
 
 console.log(Object.getPrototypeOf(mySecondObject) === myObjetct)
+
+// Classes basicas
+
+const cachorro = {
+    raca: null,
+    patas: 4,
+}
+
+const pastorAlemao = Object.create(cachorro)
+
+pastorAlemao.raca = "Pastor alemao"
+
+console.log(pastorAlemao)
+
+console.log(pastorAlemao.patas)
+
+const bulldog = Object.create(cachorro)
+
+bulldog.raca = "Bulldog"
+
+console.log(bulldog)
+
+console.log(bulldog.patas)
+
+// Função como classe - Função construtora
+
+function criarCachorro(nome, raca) {
+
+    const cachorro = Object.create({})
+
+    cachorro.nome = nome
+    cachorro.raca = raca
+
+    return cachorro 
+}
+
+const bob = criarCachorro("bob", "vira-lata")
+
+console.log(bob)
+
+const jack = criarCachorro("jack", "pitbull")
+
+console.log(Object.getPrototypeOf(jack))
