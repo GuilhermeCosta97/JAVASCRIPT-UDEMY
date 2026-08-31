@@ -120,3 +120,14 @@ console.log(footer2.clientWidth)
 const product1 = product[0]
 
 console.log(product1.getBoundingClientRect())
+
+// 13 - CSS com JS
+
+mainContainer.style.color = "red" 
+mainContainer.style.backgroundColor = "#333"
+
+// 14 - Alterando estilos de varios elementos
+
+for (const li of listItens) {
+    li.style.backgroundColor = "red"
+}
