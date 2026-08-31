@@ -92,3 +92,31 @@ h3.appendChild(myText)
 console.log(h3)
 
 mainContainer.appendChild(h3)
+
+// 10 - Trabalhando com atributos
+
+const firstLink = navLinks.querySelector("a")
+
+console.log(firstLink)
+
+firstLink.setAttribute("href", "http://www.google.com")
+
+console.log(firstLink.getAttribute("href"))
+
+firstLink.setAttribute("target", "_blank")
+
+// 11 - Altura e Largura
+
+const footer2 = document.querySelector("footer")
+
+console.log(footer2.offsetHeight)
+console.log(footer2.offsetWidth)
+
+console.log(footer2.clientHeight)
+console.log(footer2.clientWidth)
+
+// 12 - Posição do elemento
+
+const product1 = product[0]
+
+console.log(product1.getBoundingClientRect())
