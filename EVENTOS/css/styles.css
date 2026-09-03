@@ -1,3 +1,9 @@
 body {
     margin-bottom: 1000px;
 }
+
+#btn-container {
+    background-color: green;
+    padding: 30px;
+    width: auto;
+}
